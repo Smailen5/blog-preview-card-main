@@ -12,8 +12,8 @@
     --font-size-medium: 16px;
     --font-size-large: 18px;
     --font-size-x-large: 20px;
-    --medium: 600;
-    --large: 800;
+    --font-weight-medium: 600;
+    --font-weight-large: 800;
 }
 
 * {
@@ -33,7 +33,7 @@ body {
 
 main {
     width: 90%;
-    height: 70%;
+    height: 60%;
     background-color: var(--White);
     border-radius: 20px;
     border: 1px solid var(--Black);
@@ -65,21 +65,37 @@ section {
     border-radius: 4px;
 }
 
-.highlighted > p {
-    font-weight: var(--large);
+.highlighted>p {
+    font-weight: var(--font-weight-large);
 }
 
-section p:nth-child(2) {
-    
-}
+section p:nth-child(2) {}
 
-section > h3 {
+section>h3 {
     font-size: var(--font-size-x-large);
-    font-weight: var(--large);
+    font-weight: var(--font-weight-large);
 }
 
 section p:nth-child(4) {
     color: var(--Grey);
     font-size: var(--font-size-small);
+    line-height: 150%;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.userpic img {
+    width: 32px;
+    height: 32px;
+    border-radius: 32px;
+}
+
+.container span {
+    font-size: var(--font-size-small);
+    font-weight: var(--font-weight-large);
     line-height: 150%;
 }
