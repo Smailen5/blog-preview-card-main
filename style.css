@@ -32,7 +32,7 @@ body {
 }
 
 main {
-    width: 90%;
+    width: 88%;
     height: 60%;
     background-color: var(--White);
     border-radius: 20px;
@@ -80,6 +80,7 @@ section p:nth-child(4) {
     color: var(--Grey);
     font-size: var(--font-size-small);
     line-height: 150%;
+
 }
 
 .container {
@@ -98,4 +99,12 @@ section p:nth-child(4) {
     font-size: var(--font-size-small);
     font-weight: var(--font-weight-large);
     line-height: 150%;
+}
+
+@media screen and (min-width: 1440px) {
+    /* stili per la media query */
+    main {
+        width: 25%;
+        height: 75%;
+    }
 }
