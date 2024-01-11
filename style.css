@@ -7,9 +7,13 @@
     --Black: hsl(0, 0%, 7%);
     /* Typography */
     --font-family: 'Figtree', sans-serif;
+    --font-size-x-small: 12px;
     --font-size-small: 14px;
     --font-size-medium: 16px;
     --font-size-large: 18px;
+    --font-size-x-large: 20px;
+    --medium: 600;
+    --large: 800;
 }
 
 * {
@@ -24,10 +28,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: var(--font-family);
 }
 
 main {
-    width: 80%;
+    width: 90%;
     height: 70%;
     background-color: var(--White);
     border-radius: 20px;
@@ -43,4 +48,38 @@ main {
     width: 100%;
     height: auto;
     border-radius: 10px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-self: stretch;
+    align-items: flex-start;
+    font-size: var(--font-size-x-small);
+}
+
+.highlighted {
+    background: var(--Yellow, #F4D04E);
+    padding: 4px 12px;
+    border-radius: 4px;
+}
+
+.highlighted > p {
+    font-weight: var(--large);
+}
+
+section p:nth-child(2) {
+    
+}
+
+section > h3 {
+    font-size: var(--font-size-x-large);
+    font-weight: var(--large);
+}
+
+section p:nth-child(4) {
+    color: var(--Grey);
+    font-size: var(--font-size-small);
+    line-height: 150%;
 }
