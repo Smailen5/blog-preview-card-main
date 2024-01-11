@@ -11,3 +11,10 @@
     --font-size-medium: 16px;
     --font-size-large: 18px;
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
