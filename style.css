@@ -104,7 +104,7 @@ section p:nth-child(4) {
     /* stili per la media query */
     main {
         width: 25%;
-        height: 75%;
+        height: 55%;
         box-shadow: 16px 16px 0px 0px #000;
     }
 
