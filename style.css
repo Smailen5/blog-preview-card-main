@@ -18,3 +18,20 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: var(--Yellow);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    width: 80%;
+    height: 70%;
+    background-color: var(--White);
+    border-radius: 20px;
+    border: 1px solid var(--Black);
+    box-shadow: 8px 8px 0px #000;
+    padding: 24px;
+}
